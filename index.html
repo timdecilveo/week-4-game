@@ -1,0 +1,71 @@
+<!-- This is the HTML portion of the code related to The Crystal Game
+I have written questions in the comments that I don't know the answers to. -->
+<!DOCTYPE html>
+	<html lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tim Decilveo's Planet Game</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+	</head>
+	<body>
+		<h1 id="heading">Planet Collector!</h1>
+		<!-- Rules of the game. -->
+		<div class = "content-for-game">
+			<p>You will be given a random number at the start of the game.</p>
+			<p>There are four planets below. By clicking on a planet you will add a specific amount of points to your total score.</p>
+			<p>You win the game by matching your total score to a random number that is generated.</p>
+			<p>You lose the game if your total score goes above the random number that is generated.</p>
+			<p>The value of each plant is hidden from you until you click on it.</p>
+			<p>Each time the game starts, the game will change the values of each planet.</p>
+		</div>
+
+		<!-- Random number generated needs to be returned here -->
+		<div id = "random-generated-number">
+			<p>Random Number Generated:</p>
+		</div>
+
+		<div class="wins-and-losses">
+			<!-- Wins: -->
+			<p id="wins">Wins:</p>
+			<input type = "text" id = "winCounter" value = "0">
+			<!-- Losses -->
+			<p id="losses">Losses:</p>
+			<input type = "text" id = "lossCounter" value = "0">
+		</div>
+
+<!-- 		<button id = "start-button">Start</button>
+		<br>
+		<br> -->
+		<!-- Images used for the planet game. -->
+		<button>
+			<img src="assets/images/image-one.jpg" alt="mercury" id = "mercury-planet" class = "planet-click" style="width: 200px; height: 112.5px;">
+		</button>
+		<input type = "hidden" id = "mercuryHidden" value = "0">
+
+		<button>
+			<img src="assets/images/image-two.jpg" alt="venus" id = "venus-planet"style="width: 112.5px; height: 112.5px">
+		</button>
+		<input type = "hidden" id = "venusHidden" value = "0">
+
+		<button>
+			<img src="assets/images/image-three.jpg" alt="earth" id = "earth-planet"style="width: 150px; height: 112.5px">
+		</button>
+		<input type = "hidden" id = "earthHidden" value = "0">
+
+		<button>
+			<img src="assets/images/image-four.jpg" alt="mars" id = "mars-planet"style="width: 112.5px; height: 112.5px">
+		</button>
+		<input type = "hidden" id = "marsHidden" value = "0">
+
+		<div class = "total-score">
+			<p>Your total score is:</p>
+			<input type = "text" id = "counter" value = "0">
+
+			<!-- The value of the total score goes here. -->
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		<script type="text/javascript" src="assets/javascript/javascript-code.js"></script>
+ 	</body>
+</html>

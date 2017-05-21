@@ -1,0 +1,20 @@
+img{
+	width: 150px;
+	height: 150px;
+}
+body{
+	background-color: #6495ED;
+	padding: 5px;
+	color: white;
+}
+#mercury-planet, #venus-planet, #earth-planet, #mars-planet{
+	background-color: #4682B4;
+	border-color: #4682B4;
+}
+
+#winCounter, #lossCounter, #counter{
+	background-color: #4682B4;
+	border-color: #4682B4;
+	color: white;
+	text-align: center;
+}
